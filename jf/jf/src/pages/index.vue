@@ -1,14 +1,26 @@
 <template>
   <div class="hello">
-    dddd
+    <header-component></header-component>
     <router-view/>
-    dddd
+    <footer-component></footer-component>
+    <left-advertisement></left-advertisement>
+    <right-advertisement></right-advertisement> 
   </div>
 </template>
 
 <script>
+import headerComponent from "./index/headerComponent"
+import footerComponent from "./index/footerComponent"
+import leftAdvertisement from "./index/leftAdvertisement"
+import rightAdvertisement from "./index/rightAdvertisement"
 export default {
   name: 'HelloWorld',
+  components: {    
+    headerComponent,
+    footerComponent,
+    leftAdvertisement,
+    rightAdvertisement
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

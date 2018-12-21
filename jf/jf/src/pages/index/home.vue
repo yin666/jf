@@ -260,7 +260,7 @@ export default {
       }
       .one-position{       
         .shade{
-          opacity: 0; 
+          opacity: 0;
           position: absolute;
           top: -80px;
           left: 0;
@@ -314,6 +314,3 @@ export default {
   }
 }
 </style>
-
-
-
