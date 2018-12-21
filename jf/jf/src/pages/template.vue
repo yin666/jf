@@ -1,41 +1,27 @@
 <template>
   <div class="hello">
-    <header-component></header-component>
+    <div>about vuex</div>
+    <div>{{getVuex}}</div>
+    <div>this.$store.state.user.AcctAmount</div>
+    <div>set vuex</div>
     <router-view/>
-    <footer-component></footer-component>
-    <left-advertisement></left-advertisement>
     <right-advertisement></right-advertisement>
     {{msg}} 
   </div>
 </template>
 
 <script>
-import headerComponent from "./index/headerComponent"
-import footerComponent from "./index/footerComponent"
-import leftAdvertisement from "./index/leftAdvertisement"
 import rightAdvertisement from "./index/rightAdvertisement"
 export default {
   name: 'HelloWorld',
   components: {    
-    headerComponent,
-    footerComponent,
-    leftAdvertisement,
     rightAdvertisement
   },
   data () {
     return {
-      msg: this.$store.state.user.AcctAmount
+      getVuex: this.$store.state.user.AcctAmount
     }
-  },
-  mounted() {
-    this.init();
-  },
-  methods: {
-    init() {
-      this.$store.commit("AcctAmount", 1);
-      console.log(this.$store.state.user.AcctAmount);
-    }	
-	}
+  }
 }
 </script>
 
