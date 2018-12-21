@@ -34,6 +34,7 @@ export default {
     init() {
       this.$store.commit("AcctAmount", 1);
       console.log(this.$store.state.user.AcctAmount);
+      this.util.test();
     }	
 	}
 }
