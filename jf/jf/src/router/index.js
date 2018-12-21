@@ -26,7 +26,7 @@ export const index = {
 export const template = {
   path: 'template',
   name: 'template',
-  component: () => import('@/pages/template.vue'),
+  component: () => import('@/pages/template.vue')
 }
 
 export default new Router({
